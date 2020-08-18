@@ -1,10 +1,10 @@
-from transformers import BertTokenizer
+from transformers import GPT2Tokenizer
 import torch
 import os
 import codecs
 import json
 
-tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2",bos_token = "<|startoftext|>",eos_token = "<|endoftext|>")
 
 MAX_ENCODER_SIZE = 400
 MAX_DECODER_SIZE = 100
@@ -65,7 +65,7 @@ def clean_dataset(dataset_file, json_file):
             if last_part == "description" and len(last_utterance) > 0:
                 last_part = "dialogue"
                 last_user = "Victim: "
-                
+
                 last_turn = 1
                 while True:
                     line = f_in.readline()
@@ -116,19 +116,21 @@ def clean_dataset(dataset_file, json_file):
 
 
 def seq2token_ids(source_seqs, target_seq):
-    # You can try to split source_seq
+    # 可以尝试对source_seq进行切分 --> You can try to split source_seq
     encoder_input = []
     for source_seq in source_seqs:
-        encoder_input += tokenizer.tokenize(source_seq[8:]) + ["[SEP]"]
+        # 去掉 xx：---> Remove xx
+        encoder_input += tokenizer.tokenize(source_seq[8:], add_prefix_space=True) + ["<|endoftext|>"]
+    decoder_input = ["<|startoftext|>"] + tokenizer.tokenize(target_seq[8:], add_prefix_space=True)  # 去掉 xx：
 
-    decoder_input = ["[CLS]"] + tokenizer.tokenize(target_seq[8:])
+    # 设置不得超过 MAX_ENCODER_SIZE 大小 --> The setting cannot exceed MAX_ENCODER_SIZE size
     if len(encoder_input) > MAX_ENCODER_SIZE - 1:
-        if "[SEP]" in encoder_input[-MAX_ENCODER_SIZE:-1]:
-            idx = encoder_input[:-1].index("[SEP]", -(MAX_ENCODER_SIZE - 1))
+        if "<|endoftext|>" in encoder_input[-MAX_ENCODER_SIZE:-1]:
+            idx = encoder_input[:-1].index("<|endoftext|>", -(MAX_ENCODER_SIZE - 1))
             encoder_input = encoder_input[idx + 1:]
 
-    encoder_input = ["[CLS]"] + encoder_input[-(MAX_ENCODER_SIZE - 1):]
-    decoder_input = decoder_input[:MAX_DECODER_SIZE - 2] + ["[SEP]"]
+    encoder_input = ["<|startoftext|>"] + encoder_input[-(MAX_ENCODER_SIZE - 1):]
+    decoder_input = decoder_input[:MAX_DECODER_SIZE - 1] + ["<|endoftext|>"]
     enc_len = len(encoder_input)
     dec_len = len(decoder_input)
 
