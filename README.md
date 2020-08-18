@@ -1,7 +1,7 @@
 # Automated-Medical-Assistance
-```
+`
 With so many possibilities of disease and disorders, there had been a surge in demand for medical assistance. Although there are a number of well-practiced physicians and doctors, the inability to reach has always been a concern to many diseased ones. To fill this gap, we propose a model based on deep learning methods, a conversational dialogue system that is able to provide better medication during the need of such and is able to answer any queries related to one’s health. We use the medical assistance dataset scraped from websites containing professional assistance via a conversation system. We also tend to use the trending transformers trained on large datasets, for text generation like BERT, GPT2, and BART. We also performed a comparative study of models and based on the analysis, the results shows that BART model generates a doctor-like response and contains clinically informative data. The overall generated results were very promising and show that pre-trained transformers are reliable for developing automated medical assistance system and doctorlike-treatments.
-```
+`
 
 This repository contains python scripts used for the analysis on a research for EMNLP workshop(ClinicalEMNLP). The research provides a technique to adapt the methods of deep-learning with transfer-learning for a dialogue system which uses transformers like BERT, GPT ,and BART to generate informative dialogues, easy to understand and familiar to human-like conversations. It has been trained on datasets containing interactions between patients and doctors.
 
