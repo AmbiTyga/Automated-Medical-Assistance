@@ -18,9 +18,9 @@ You can test the scripts from this repo on this data. To test the repo, follow t
 - To generate response and calculate BLEU, NIST, DIST, METEOR, Entropy ,and Average length generated run `generate_text.py`.
 
 ## References
-- (BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding)[https://arxiv.org/pdf/1810.04805.pdf]
-- (Language Models are Unsupervised Multitask Learners)[https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf]
-- (BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension)[https://arxiv.org/pdf/1910.13461]
+- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805.pdf "BERT")
+- [Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf "GPT2")
+- [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461 "BART")
 
 ## Cite
 `{
