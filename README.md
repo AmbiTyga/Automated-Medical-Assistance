@@ -12,10 +12,10 @@ We have used three main transformers-BERT, GPT, and BART; for the analysis. Arch
 You can test the scripts from this repo on this data. To test the repo, follow the steps:
 - Run this command in the command-line/command-prompt,```pip install -r requirements.txt```This will download the required packages neccesary to run the program
 - Next go to the Model's(BERT,GPT,BART) directory you want to test.
-- First run the `preprocess.py`, this will generate a json file containing interactions between patient and doctors, and sliced data into training, validation and testing dataset.
-- Second, run the `train.py`, this will update the weights of the model for the required dataset.
-- To calculate the perplexity score on each data(train, validation, test) run `calculate_perplexity.py`. This will calculate the perplexity score for each data based on your updated model's parameters.
-- To generate response and calculate BLEU, NIST, DIST, METEOR, Entropy ,and Average length generated run `generate_text.py`.
+- First run the ```preprocess.py```, this will generate a json file containing interactions between patient and doctors, and sliced data into training, validation and testing dataset.
+- Second, run the ```train.py```, this will update the weights of the model for the required dataset.
+- To calculate the perplexity score on each data(train, validation, test) run ```calculate_perplexity.py```. This will calculate the perplexity score for each data based on your updated model's parameters.
+- To generate response and calculate BLEU, NIST, DIST, METEOR, Entropy ,and Average length generated run ```generate_text.py```.
 
 ## References
 - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/pdf/1810.04805.pdf "BERT")
