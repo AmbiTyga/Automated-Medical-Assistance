@@ -22,6 +22,6 @@ You can test the scripts from this repo on this data. To test the repo, follow t
 - [Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf "GPT2")
 - [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461 "BART")
 
-## Cite
-`{
-}`
+## Collaborators
+- [Raj Ratn Pranesh](https://rajratnpranesh.github.io/)
+- [Sumit Kumar](https://sumit6597.github.io/)
