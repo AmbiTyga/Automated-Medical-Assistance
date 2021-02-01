@@ -23,5 +23,5 @@ You can test the scripts from this repo on this data. To test the repo, follow t
 - [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461 "BART")
 
 ## Collaborators
-- [Raj Ratn Pranesh](https://rajratnpranesh.github.io/)
-- [Sumit Kumar](https://sumit6597.github.io/)
+- [Raj Ratn Pranesh](https://github.com/rajratnpranesh)
+- [Sumit Kumar](https://github.com/sumit6597)
