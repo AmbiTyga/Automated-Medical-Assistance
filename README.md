@@ -1,7 +1,7 @@
 # Automated-Medical-Assistance:
 ## This repo contains the code for our paper: Automated Medical Assistance: Attention Based Consultation System (https://openreview.net/forum?id=jYV4ZXy0L5 "PDF")
 ## Authors
-- [Raj Ratn Pranesh](https://rajratnpranesh.github.io/) & [Ambesh Shekhar](https://ambityga.github.io/) [Sumit Kumar](https://github.com/sumit6597)
+- [Raj Ratn Pranesh](https://rajratnpranesh.github.io/) & [Sumit Kumar](https://github.com/sumit6597) & [Ambesh Shekhar](https://ambityga.github.io/)
 
 
 
