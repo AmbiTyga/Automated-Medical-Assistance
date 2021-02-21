@@ -1,4 +1,9 @@
-# Automated-Medical-Assistance
+# Automated-Medical-Assistance:
+## This repo contains the code for our paper: Automated Medical Assistance: Attention Based Consultation System (https://openreview.net/forum?id=jYV4ZXy0L5 "PDF")
+## Collaborators
+- [Raj Ratn Pranesh](https://github.com/rajratnpranesh) [Sumit Kumar](https://github.com/sumit6597)
+
+
 
 > With so many possibilities of disease and disorders, there had been a surge in demand for medical assistance. Although there are a number of well-practiced physicians and doctors, the inability to reach has always been a concern to many diseased ones. To fill this gap, we propose a model based on deep learning methods, a conversational dialogue system that is able to provide better medication during the need of such and is able to answer any queries related to one’s health. We use the medical assistance dataset scraped from websites containing professional assistance via a conversation system. We also tend to use the trending transformers trained on large datasets, for text generation like BERT, GPT2, and BART. We also performed a comparative study of models and based on the analysis, the results shows that BART model generates a doctor-like response and contains clinically informative data. The overall generated results were very promising and show that pre-trained transformers are reliable for developing automated medical assistance system and doctorlike-treatments.
 
@@ -22,6 +27,4 @@ You can test the scripts from this repo on this data. To test the repo, follow t
 - [Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf "GPT2")
 - [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461 "BART")
 
-## Collaborators
-- [Raj Ratn Pranesh](https://github.com/rajratnpranesh)
-- [Sumit Kumar](https://github.com/sumit6597)
+
